@@ -33,7 +33,7 @@ const TodoForm = (props: ITodoForm) => {
       <input
         ref={inputRef}
         type="text"
-        placeholder='Enter new todo'
+        placeholder='Enter new todo and press enter'
         onChange={event => handleInputChange(event)}
         onKeyPress={event => handleInputEnter(event)}
       />
