@@ -17,6 +17,7 @@ const TodoItem = (props: ITodoItem) => {
         <input
           value={props.todo.text}
           onBlur={props.handleBlur}
+          className={props.todo.isCompleted ? 'decoration' : ''}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => props.handleUpdate(event, props.todo.id)}
         />
       </div>
