@@ -1,15 +1,15 @@
 import React from 'react';
 import shortid from 'shortid';
 
-import { ITodo, ITodoForm } from '../interfaces'
+import { ITodo, ITodoForm } from '../interfaces';
 
 const TodoForm = (props: ITodoForm) => {
-  const inputRef = React.useRef<HTMLInputElement>(null)
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
-  const [formState, setFormState] = React.useState('')
+  const [formState, setFormState] = React.useState('');
 
   function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setFormState(event.target.value)
+    setFormState(event.target.value);
   }
 
   function handleInputEnter(event: React.KeyboardEvent) {
@@ -20,10 +20,10 @@ const TodoForm = (props: ITodoForm) => {
         isCompleted: false
       }
 
-      props.handleCreate(newTodo)
+      props.handleCreate(newTodo);
 
       if (inputRef && inputRef.current) {
-        inputRef.current.value = ''
+        inputRef.current.value = '';
       }
     }
   }

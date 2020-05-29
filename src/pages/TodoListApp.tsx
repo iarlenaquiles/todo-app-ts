@@ -8,7 +8,7 @@ import { ITodo } from '../interfaces';
 import '../style/styles.css';
 
 const TodoListApp = () => {
-  const [todos, setTodos] = React.useState<ITodo[]>([])
+  const [todos, setTodos] = React.useState<ITodo[]>([]);
 
   React.useEffect(() => {
     const array = localStorage.getItem('todos');
@@ -22,7 +22,7 @@ const TodoListApp = () => {
    
     newTodosState.push(todo);
 
-    setTodos(newTodosState)
+    setTodos(newTodosState);
 
     localStorage.setItem("todos", JSON.stringify(newTodosState));
   }
@@ -37,7 +37,7 @@ const TodoListApp = () => {
   }
 
   function handleRemove(id: string) {
-    const newTodosState: ITodo[] = todos.filter((todo: ITodo) => todo.id !== id)
+    const newTodosState: ITodo[] = todos.filter((todo: ITodo) => todo.id !== id);
 
     setTodos(newTodosState);
     localStorage.setItem("todos", JSON.stringify(newTodosState));
@@ -54,9 +54,9 @@ const TodoListApp = () => {
 
   function handleBlur(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.value.length === 0) {
-      event.target.classList.add('todo-input-error')
+      event.target.classList.add('todo-input-error');
     } else {
-      event.target.classList.remove('todo-input-error')
+      event.target.classList.remove('todo-input-error');
     }
   }
 

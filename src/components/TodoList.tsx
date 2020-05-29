@@ -2,7 +2,7 @@ import React from 'react';
 
 import TodoItem from './TodoItem';
 
-import { ITodoList } from '../interfaces'
+import { ITodoList } from '../interfaces';
 
 const TodoList = (props: ITodoList) => {
   return (
@@ -24,4 +24,4 @@ const TodoList = (props: ITodoList) => {
   )
 }
 
-export default TodoList
+export default TodoList;
