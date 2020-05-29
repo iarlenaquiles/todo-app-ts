@@ -1,7 +1,8 @@
 import React from 'react';
 import shortid from 'shortid';
 
-import { ITodo, ITodoForm } from '../interfaces';
+import { ITodo } from '../interfaces/ITodo';
+import { ITodoForm } from '../interfaces/ITodoForm';
 
 const TodoForm = (props: ITodoForm) => {
   const inputRef = React.useRef<HTMLInputElement>(null);

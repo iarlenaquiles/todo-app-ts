@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ITodoItem } from '../interfaces';
+import { ITodoItem } from '../interfaces/ITodoItem';
 
 const TodoItem = (props: ITodoItem) => {
   return (
