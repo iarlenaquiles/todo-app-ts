@@ -3,7 +3,7 @@ import * as React from 'react';
 import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
 
-import { ITodo } from '../interfaces';
+import { ITodo } from '../interfaces/ITodo';
 
 import '../style/styles.css';
 
